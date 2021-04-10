@@ -1,11 +1,11 @@
-version: "3.9"
+version: "3.3"
 
 services: 
   server:
-    dockerfile: ./server/Dockerfile
+    build: ./server/
     ports:
       - "4444:4444"
   display:
-    dockerfile: ./display/Dockerfile
+    build: ./display/
     ports:
       - "4200:4200"
